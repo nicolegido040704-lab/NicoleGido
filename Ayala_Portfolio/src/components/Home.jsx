@@ -2,7 +2,8 @@ export default function Home() {
   return (
     <section id="home" className="home">
       <div className="home-content">
-        <h1>Nicole Gido Ayala</h1>
+        <p>Hi I am</p>
+        <h1>Nicole</h1>
         <p className="description">
           <strong>BS Information Technology | Current: 2nd Year</strong>
         </p>

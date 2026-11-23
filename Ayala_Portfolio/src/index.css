@@ -213,7 +213,93 @@ section {
 }
 
 
+.section {
+  padding: 5rem 1.5rem;
+}
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.section h2 {
+  font-size: 2rem;
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+.section p {
+  max-width: 60ch;
+}
+.pale {
+  background: var(--ice);
+}
 
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+}
+.pills li {
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--blue);
+}
+
+.achievements {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+.achievements li {
+  padding: 1rem 1.25rem;
+  border-left: 6px solid var(--mid);
+  border-radius: 12px;
+  background: var(--ice);
+}
+.achievements strong {
+  display: block;
+  color: var(--blue);
+}
+
+
+.footer {
+  padding: 3rem 1.5rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  background: var(--navy);
+}
+.footer h2 {
+  color: var(--yellow);
+  margin-bottom: 1rem;
+}
+.footer a {
+  color: var(--sky);
+}
+.footer a:hover {
+  color: var(--yellow);
+}
+.footer small {
+  display: block;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
+
+
+@media (min-width: 1024px) {
+  :root {
+    --max: 1100px;
+  }
+  .section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .achievements {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .achievements li {
+    padding: 1.5rem;
+  }
+}
 
 @media (min-width: 1440px) {
   :root {
@@ -240,6 +326,33 @@ section {
   html {
     font-size: 125%;
   } 
+}
+
+
+@media (min-width: 2560px) {
+  :root {
+    --max: 1800px;
+  }
+  html {
+    font-size: 150%;
+  }
+  .home::before {
+    width: 360px;
+    height: 1200px;
+  }
+  .home::after {
+    width: 320px;
+    height: 900px;
+  }
+}
+
+@media (min-width: 3840px) {
+  :root {
+    --max: 2400px;
+  }
+  html {
+    font-size: 200%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
