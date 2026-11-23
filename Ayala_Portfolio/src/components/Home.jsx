@@ -5,7 +5,7 @@ export default function Home() {
         <p>Hi I am</p>
         <h1>Nicole</h1>
         <p className="description">
-          <strong>BS Information Technology | Current: 2nd Year</strong>
+          <strong>BS Information Technology | Current: 2nd Year | Owner of Ayala malls (jk)</strong>
         </p>
         <p className="wanna">Wanna learn more about me?</p>
         <a href="#about" className="btn">
